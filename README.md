@@ -1,0 +1,2 @@
+# Epignosis.appli
+GESTION SCOLAIRE EPIGNOSIS
