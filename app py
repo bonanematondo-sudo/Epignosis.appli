@@ -1,0 +1,73 @@
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.label import Label
+from kivy.uix.button import Button
+from kivy.uix.textinput import TextInput
+
+
+class EpignosisApp(App):
+
+    def build(self):
+        layout = BoxLayout(
+            orientation="vertical",
+            padding=20,
+            spacing=15
+        )
+
+        title = Label(
+            text="APPLICATION DE GESTION\nEPIGNOSIS",
+            font_size=24,
+            bold=True,
+            size_hint_y=None,
+            height=80
+        )
+
+        layout.add_widget(title)
+
+        layout.add_widget(
+            Button(
+                text="ÉLÈVES",
+                font_size=20
+            )
+        )
+
+        layout.add_widget(
+            Button(
+                text="FRAIS SCOLAIRES",
+                font_size=20
+            )
+        )
+
+        layout.add_widget(
+            Button(
+                text="UNIFORMES",
+                font_size=20
+            )
+        )
+
+        layout.add_widget(
+            Button(
+                text="VAREUSES",
+                font_size=20
+            )
+        )
+
+        layout.add_widget(
+            Button(
+                text="SALAIRES",
+                font_size=20
+            )
+        )
+
+        layout.add_widget(
+            Button(
+                text="RAPPORT",
+                font_size=20
+            )
+        )
+
+        return layout
+
+
+if __name__ == "__main__":
+    EpignosisApp().run()
