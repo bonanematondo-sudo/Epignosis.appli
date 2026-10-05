@@ -50,3 +50,4 @@ jobs:
         with:
           name: Epignosis-APK
           path: bin/*.apk
+
